@@ -12,7 +12,12 @@ public class BankCard {
     @Column
     private String bankName;
 
-    @ManyToOne()
+    @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;
+
+    @ManyToOne
+    @JoinColumn(name = "safe_id")
+    private Safe safe;
+
 }
