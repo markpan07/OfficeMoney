@@ -7,7 +7,9 @@ public class BankCard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private Long number;
+    @Column
     private String bankName;
 
     @ManyToOne()

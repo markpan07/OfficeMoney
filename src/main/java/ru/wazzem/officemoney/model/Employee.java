@@ -12,8 +12,11 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Column
     private String surname;
+    @Column
     private String thirdName;
+    @Column
     private BigDecimal balance;
     @OneToMany(mappedBy = "employee")
     private Set<BankCard> cards;
